@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /index                           controllers.Application.index()
+GET     /login                           controllers.Application.login()
+GET     /grid                            controllers.Application.grid()
+GET     /table                           controllers.Application.table()
+GET     /css                             controllers.Application.css()
+GET     /script                          controllers.Application.script()
+GET     /menu                            controllers.Application.menu()
+GET     /top                             controllers.Application.top()
+GET     /foot                            controllers.Application.foot()
+
+GET     /qlist                           controllers.Application.qlist()
+GET     /qlistRs                         controllers.Application.qlistRs(page,rows,sidx,sord)
+POST    /qupdate                           controllers.Application.qupdate()
+
+GET     /mform                           controllers.Application.mform()
+GET     /chart                           controllers.Application.chart()
+GET     /typography                      controllers.Application.typography()
+GET     /gallery                         controllers.Application.gallery() 
+GET     /calendar                        controllers.Application.calendar() 
+GET     /file                            controllers.Application.file() 
+GET     /tour                            controllers.Application.tour()
+GET     /icon                            controllers.Application.icon()
+GET     /micon                           controllers.Application.micon()
+GET     /error                           controllers.Application.error()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
